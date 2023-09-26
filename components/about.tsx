@@ -5,7 +5,7 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
-export default function () {
+export default function About() {
   const { ref } = useSectionInView("About");
 
   return (
@@ -36,7 +36,7 @@ export default function () {
         developer.
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy fitness. I
+        <span className="italic">When Im not coding</span>, I enjoy fitness. I
         enjoy running, going to the gym & boxing, I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
