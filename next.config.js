@@ -3,6 +3,11 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  distDir: "build", // Specify your custom build folder here
 };
 
-module.exports = nextConfig;
+module.exports = {
+  experimental: {
+    serverActions: true,
+  },
+};
