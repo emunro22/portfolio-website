@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Software Apprentice - DXC Technology",
     location: "Glasgow, Scotland",
     description:
-      "I graduated after 2 years of studying. I then moved onto studying at university",
+      "I completed my apprenticeship after 2 years of studying. I then moved onto studying 'Software Development' at university",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2022",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "University",
     location: "Glasgow Caledonian with DXC ",
     description:
-      "I am currently studying 'Software Development within a Business' at Glasgow Cali University",
+      "I am currently studying 'Software Development' at Glasgow Cali University, I am in my Second year out of a Four year course",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - Present",
   },
@@ -99,7 +99,6 @@ export const skillsData = [
   "Redux",
   "GraphQL",
   "SQLite",
-  "Python",
   "PostgreSQL",
   "Python",
   "Linux",
