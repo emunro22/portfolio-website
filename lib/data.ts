@@ -70,20 +70,20 @@ export const projectsData = [
     url: "https://euanmunro.info/",
   },
   {
-    title: "rmtDev",
+    title: "Quizmify - Coming Soon",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Full Stack AI Quiz Platform with NextJS 13, TailwindCSS, OpenAI, Next Auth",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "OpenAI", "NextAuth"],
     imageUrl: rmtdevImg,
-    url: "https://example.com/lol",
+    url: "https://example.com/quizmify",
   },
   {
-    title: "Word Analytics",
+    title: "Chat with any PDF - Coming Soon",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Discover its OCR capabilities, user-friendly interface, and commitment to data security. Explore the future of PDFs with AI ",
+    tags: ["React", "Next.js", "Tailwind", "OpenAI", "Stripe", "TypeScript"],
     imageUrl: wordanalyticsImg,
-    url: "https://example.com/",
+    url: "https://example.com/chatwithpdf",
   },
 ] as const;
 
