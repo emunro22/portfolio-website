@@ -41,7 +41,7 @@ export default function About() {
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
         <span className="font-medium">
-          Artificial Intelligance and the Blockchain
+          Artificial Intelligence, Blockchain & DevOps
         </span>
         .
       </p>

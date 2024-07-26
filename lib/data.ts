@@ -41,12 +41,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Software Apprentice - DXC Technology",
+    title: "Technology Apprentice - DXC Technology",
     location: "Glasgow, Scotland",
     description:
       "I completed my Level 6 and Level 8 apprenticeship after 2 years of studying. I then moved onto studying 'Software Development' at Glasgow Caledonian University",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2022",
+  },
+  {
+    title: "BAE Project Lead",
+    location: "DXC, Glasgow, Scotland",
+    description:
+      "Proficiently managed a compact team, administering, deploying, and constructing laptops for BAE projects. Utilized advanced configuration techniques, ensuring timely deliveries and exceeding deadlines. Earned accolades for skilled execution, enhancing productivity and cost savings. Showcased adept administrative skills, driving successful cross-functional teams for victorious project outcomes.",
+    icon: React.createElement(FaReact),
+    date: "April 2022 - Nov 2023",
   },
   {
     title: "University",
@@ -65,18 +73,10 @@ export const experiencesData = [
     date: "2022 - Present",
   },
   {
-    title: "BAE Project Lead",
-    location: "DXC, Glasgow, Scotland",
-    description:
-      "Proficiently managed a compact team, administering, deploying, and constructing laptops for BAE projects. Utilized advanced configuration techniques, ensuring timely deliveries and exceeding deadlines. Earned accolades for skilled execution, enhancing productivity and cost savings. Showcased adept administrative skills, driving successful cross-functional teams for victorious project outcomes.",
-    icon: React.createElement(FaReact),
-    date: "April 2022 - Nov 2023",
-  },
-  {
     title: "Application Engineer",
     location: "DXC, Glasgow, Scotland",
     description:
-      "Led PLM project for BAE Systems and Rheinmetall BAE Systems Land. Managed Teamcenter versions 11, 13, and 14, overseeing Oracle and SQL scripts. Led team through implementation, customization, and support phases, supporting critical server migration for enhanced collaboration.",
+      "Led PLM project for BAE Systems and Rheinmetall BAE Systems Land. Managed Teamcenter versions 11, 13, and 14, overseeing Oracle and SQL scripts. Led team through implementation, customisation, and support phases, supporting critical server migration for enhanced collaboration.",
     icon: React.createElement(CgServer),
     date: "Nov 2023 - Present",
   },
@@ -89,7 +89,7 @@ export const projectsData = [
       "This is my Freelance Portfolio to show off my work and send to clients, check out my Portfolio and Testimonials for more info! ",
     tags: ["React", "Next.js", "Tailwind", "CSS"],
     imageUrl: corpcommentImg,
-    url: "https://euanmunro.info/",
+    url: "https://euanmunro.website/",
   },
   {
     title: "Quizmify - Coming Soon",
@@ -132,4 +132,7 @@ export const skillsData = [
   "Framer Motion",
   "AI",
   "Blockchain",
+  "Teamcenter",
+  "DevOps",
+  "PLM",
 ] as const;
