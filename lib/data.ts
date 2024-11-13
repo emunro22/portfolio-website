@@ -44,23 +44,15 @@ export const experiencesData = [
     title: "Technology Apprentice - DXC Technology",
     location: "Glasgow, Scotland",
     description:
-      "I completed my Level 6 and Level 8 apprenticeship after 2 years of studying. I then moved onto studying 'Software Development' at Glasgow Caledonian University",
+      "I completed my Level 6 and Level 8 apprenticeship after 10 months. I then moved onto studying 'Software Development' at Glasgow Caledonian University",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2022",
-  },
-  {
-    title: "BAE Project Lead",
-    location: "DXC, Glasgow, Scotland",
-    description:
-      "Proficiently managed a compact team, administering, deploying, and constructing laptops for BAE projects. Utilized advanced configuration techniques, ensuring timely deliveries and exceeding deadlines. Earned accolades for skilled execution, enhancing productivity and cost savings. Showcased adept administrative skills, driving successful cross-functional teams for victorious project outcomes.",
-    icon: React.createElement(FaReact),
-    date: "April 2022 - Nov 2023",
+    date: "January 2021 - May 2022",
   },
   {
     title: "University",
     location: "Glasgow Caledonian with DXC ",
     description:
-      "I am currently studying 'Software Development' at Glasgow Cali University, I am in my Second year out of a Four year course",
+      "I am currently studying 'Software Development' at Glasgow Cali University, I am in my Third Year, I am predicted to get a 1st class honours",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - Present",
   },
@@ -68,17 +60,25 @@ export const experiencesData = [
     title: "Full-Stack Freelance Web Developer",
     location: "Glasgow, Scotland",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Designed and developed responsive websites tailored to client needs using a tech stack that includes HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Tailwind, Prisma, MongoDB, SQLite, Python, and Linux. Managed projects from concept to deployment with effective client communication, resulting in a portfolio of over 25 successful projects across various industries.",
     icon: React.createElement(CgWebsite),
-    date: "2022 - Present",
+    date: "May 2022 - December 2024",
   },
   {
     title: "Application Engineer",
     location: "DXC, Glasgow, Scotland",
     description:
-      "Led PLM project for BAE Systems and Rheinmetall BAE Systems Land. Managed Teamcenter versions 11, 13, and 14, overseeing Oracle and SQL scripts. Led team through implementation, customisation, and support phases, supporting critical server migration for enhanced collaboration.",
+      "Teamcenter Administrator with expertise in versions 11, 13, and 14, leading server migrations across four environments and managing 15 servers to ensure optimal reliability and performance. Collaborated with cross-functional teams to customise Teamcenter configurations using BMIDE and SQL for over 2,000 users, while enhancing operational efficiency through workflow improvements, task automation, and bash scripting, optimising system architecture for scalability in enterprise-level PLM implementations.",
     icon: React.createElement(CgServer),
-    date: "Nov 2023 - Present",
+    date: "Nov 2023 - Dec 2024",
+  },
+  {
+    title: "DevOps Engineer",
+    location: "DXC, Glasgow, Scotland",
+    description:
+      "Working within the public sector, working with alot of DevOps technologies such as Azure, Jenkins, Terraform, Kubernetes, Openshift etc",
+    icon: React.createElement(CgServer),
+    date: "Oct 2024 - Present",
   },
 ] as const;
 
@@ -133,6 +133,14 @@ export const skillsData = [
   "AI",
   "Blockchain",
   "Teamcenter",
-  "DevOps",
-  "PLM",
+  "BMIDE",
+  "Powershell",
+  "Ansible",
+  "Azure",
+  "AWS",
+  "Docker",
+  "Jenkins",
+  "Kubernetes",
+  "OpenShift",
+  "Terraform",
 ] as const;
