@@ -41,45 +41,31 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Technology Apprentice - DXC Technology",
+    title: "DXC Technology",
     location: "Glasgow, Scotland",
     description:
-      "I completed my Level 6 and Level 8 apprenticeship after 10 months. I then moved onto studying 'Software Development' at Glasgow Caledonian University",
+      "I started my career as an apprentice, completing Level 6 and Level 8 HNC/HND in IT Telecommunications in just 10 months. I then led the BAE Build Project, deploying 15,000 laptops and saving £250,000 through process improvements. After specialising in Teamcenter administration and workflow automation, I moved into my current role as an Azure DevOps Engineer at DXC, where I build CI/CD pipelines and leverage Terraform, Kubernetes, and Docker for scalable deployments.",
     icon: React.createElement(CgWorkAlt),
-    date: "January 2021 - May 2022",
+    date: "January 2021 - January 2025",
   },
   {
     title: "University",
-    location: "Glasgow Caledonian with DXC ",
-    description:
-      "I am currently studying 'Software Development' at Glasgow Cali University, I am in my Third Year, I am predicted to get a 1st class honours",
-    icon: React.createElement(LuGraduationCap),
-    date: "2022 - Present",
-  },
-  {
-    title: "Full-Stack Freelance Web Developer",
     location: "Glasgow, Scotland",
     description:
-      "Designed and developed responsive websites tailored to client needs using a tech stack that includes HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Tailwind, Prisma, MongoDB, SQLite, Python, and Linux. Managed projects from concept to deployment with effective client communication, resulting in a portfolio of over 25 successful projects across various industries.",
-    icon: React.createElement(CgWebsite),
-    date: "May 2022 - December 2024",
+      "After completing my apprenticeship I then went on to study 'Software Development within a Business' at Glasgow Caledonian University, I recieved a Bachelors Degree in this field",
+    icon: React.createElement(LuGraduationCap),
+    date: "September 2022 - 2025",
   },
   {
-    title: "Application Engineer",
-    location: "DXC, Glasgow, Scotland",
+    title: "ThinkAnalytics",
+    location: "Glasgow, Scotland",
     description:
-      "Teamcenter Administrator with expertise in versions 11, 13, and 14, leading server migrations across four environments and managing 15 servers to ensure optimal reliability and performance. Collaborated with cross-functional teams to customise Teamcenter configurations using BMIDE and SQL for over 2,000 users, while enhancing operational efficiency through workflow improvements, task automation, and bash scripting, optimising system architecture for scalability in enterprise-level PLM implementations.",
-    icon: React.createElement(CgServer),
-    date: "Nov 2023 - Dec 2024",
+      "I am now a CloudOps Engineer at ThinkAnalytics, passionate about optimising cloud infrastructure and automating workflows for high availability, performance, and security.",
+    icon: React.createElement(CgWorkAlt),
+    date: "January 2025 - Present",
   },
-  {
-    title: "DevOps Engineer",
-    location: "DXC, Glasgow, Scotland",
-    description:
-      "Working within the public sector, working with alot of DevOps technologies such as Azure, Jenkins, Terraform, Kubernetes, Openshift etc",
-    icon: React.createElement(CgServer),
-    date: "Oct 2024 - Present",
-  },
+
+
 ] as const;
 
 export const projectsData = [
@@ -110,37 +96,12 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "SQLite",
-  "SQLPlus",
-  "Powershell",
-  "PostgreSQL",
-  "Python",
-  "Linux",
-  "Framer Motion",
-  "AI",
-  "Blockchain",
-  "Teamcenter",
-  "BMIDE",
-  "Powershell",
-  "Ansible",
+  "Web Dev (React, Next.js, TypeScript)",
+  "IAC (Terraform, Ansible)",
+  "Scripting (Python and Bash)",
+  "Containerisation (Docker, Kubernetes)",
   "Azure",
   "AWS",
-  "Docker",
-  "Jenkins",
-  "Kubernetes",
-  "OpenShift",
-  "Terraform",
+  "CICD (Gitlab)",
+  "Teamcenter (BMIDE, SQL)",
 ] as const;
