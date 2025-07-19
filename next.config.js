@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: "build",
+  // distDir removed so Vercel finds .next/
 };
 
 module.exports = nextConfig;
