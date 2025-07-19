@@ -1,74 +1,162 @@
 "use client";
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
+import { useState } from "react";
 import toast from "react-hot-toast";
+import { FaPaperPlane } from "react-icons/fa";
+import { sendEmail } from "@/actions/sendEmail";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const [pending, setPending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    setPending(true);
+
+    const formData = new FormData(form);
+    const { error } = await sendEmail(formData);
+
+    if (error) {
+      toast.error(error);
+    } else {
+      toast.success("Email sent successfully!");
+      form.reset();
+    }
+    setPending(false);
+  };
 
   return (
-    <motion.section
+    <section
       id="contact"
-      ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1,
-      }}
-      viewport={{
-        once: true,
-      }}
+      className="
+        w-full
+        px-4 sm:px-6
+        scroll-mt-28
+        mb-32
+        text-center
+      "
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <h2 className="text-4xl font-bold tracking-tight text-white mb-4">
+        Contact Me
+      </h2>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="text-base sm:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
+        <a
+          href="mailto:euanmunroo@gmail.com"
+          className="underline underline-offset-4 decoration-white/40 hover:decoration-white transition"
+        >
           euanmunroo@gmail.com
         </a>{" "}
         or through this form.
       </p>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
+        onSubmit={handleSubmit}
+        className="
+          mt-12
+          mx-auto
+          flex flex-col
+          gap-6
+          max-w-lg
+          text-left
+        "
       >
-        <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="senderEmail"
-          type="email"
-          required
-          maxLength={500}
-          placeholder="Your email"
-        />
-        <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="message"
-          placeholder="Your message"
-          required
-          maxLength={5000}
-        />
-        <SubmitBtn />
+        {/* Email */}
+        <div className="flex flex-col">
+          <label htmlFor="senderEmail" className="sr-only">
+            Your email
+          </label>
+          <input
+            id="senderEmail"
+            name="senderEmail"
+            type="email"
+            required
+            maxLength={500}
+            placeholder="Your email"
+            className="
+              h-14
+              rounded-lg
+              px-5
+              bg-white/10
+              text-white
+              placeholder-white/50
+              outline-none
+              ring-1 ring-white/10
+              focus:ring-2 focus:ring-white/30
+              transition
+            "
+          />
+        </div>
+
+        {/* Message */}
+        <div className="flex flex-col">
+            <label htmlFor="message" className="sr-only">
+              Your message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              maxLength={5000}
+              placeholder="Your message"
+              rows={7}
+              className="
+                rounded-lg
+                px-5 py-4
+                bg-white/10
+                text-white
+                placeholder-white/50
+                outline-none
+                ring-1 ring-white/10
+                focus:ring-2 focus:ring-white/30
+                transition
+                resize-none
+              "
+            />
+        </div>
+
+        {/* Submit button */}
+        <div className="mt-1">
+          <button
+            type="submit"
+            disabled={pending}
+            className="
+              group
+              inline-flex
+              items-center
+              gap-2
+              rounded-full
+              px-7
+              h-11
+              text-sm
+              font-medium
+              text-white
+              bg-white/10
+              backdrop-blur
+              ring-1 ring-white/10
+              hover:bg-white/15
+              focus:outline-none
+              focus:ring-2 focus:ring-white/40
+              transition
+              disabled:opacity-60
+              disabled:cursor-not-allowed
+            "
+          >
+            {pending ? (
+              <span className="flex items-center gap-2">
+                <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
+                Sending…
+              </span>
+            ) : (
+              <>
+                Submit
+                <FaPaperPlane className="text-xs opacity-70 transition-transform group-hover:translate-x-[3px] group-hover:-translate-y-[2px]" />
+              </>
+            )}
+          </button>
+        </div>
       </form>
-    </motion.section>
+    </section>
   );
 }

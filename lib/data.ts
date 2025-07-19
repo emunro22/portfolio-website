@@ -44,7 +44,7 @@ export const experiencesData = [
     title: "DXC Technology",
     location: "Glasgow, Scotland",
     description:
-      "I started my career as an apprentice, completing Level 6 and Level 8 HNC/HND in IT Telecommunications in just 10 months. I then led the BAE Build Project, deploying 15,000 laptops and saving £250,000 through process improvements. After specialising in Teamcenter administration and workflow automation, I moved into my current role as an Azure DevOps Engineer at DXC, where I build CI/CD pipelines and leverage Terraform, Kubernetes, and Docker for scalable deployments.",
+      "Roles included: Apprentice (IT Telecoms), Project Lead (BAE Build Project), Teamcenter Administrator / Automation Specialist, Azure DevOps Engineer (DXC).",
     icon: React.createElement(CgWorkAlt),
     date: "January 2021 - January 2025",
   },
@@ -60,7 +60,7 @@ export const experiencesData = [
     title: "ThinkAnalytics",
     location: "Glasgow, Scotland",
     description:
-      "I am now a CloudOps Engineer at ThinkAnalytics, passionate about optimising cloud infrastructure and automating workflows for high availability, performance, and security.",
+      "CloudOps Engineer at ThinkAnalytics, passionate about optimising cloud infrastructure and automating workflows for high availability, performance, and security.",
     icon: React.createElement(CgWorkAlt),
     date: "January 2025 - Present",
   },
@@ -78,12 +78,12 @@ export const projectsData = [
     url: "https://euanmunro.website/",
   },
   {
-    title: "Quizmify - Coming Soon",
+    title: "AWS Cloud Practitioner",
     description:
-      "Full Stack AI Quiz Platform with NextJS 13, TailwindCSS, OpenAI, Next Auth",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "OpenAI", "NextAuth"],
+      "Certified AWS Cloud Practitioner, next step is AWS Solutions Architect",
+    tags: ["AWS", "EC2", "Lambda", "CloudWatch", "EMR", "ERD"],
     imageUrl: rmtdevImg,
-    url: "https://example.com/quizmify",
+    url: "https://www.credly.com/badges/1ed87dc1-19a3-4515-8ea1-aa7589148629/linked_in_profile",
   },
   {
     title: "Chat with any PDF - Coming Soon",

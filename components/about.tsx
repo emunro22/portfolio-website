@@ -25,7 +25,7 @@ export default function About() {
           since I started within Tech
         </span>
         . <span className="italic">My favorite part of CloudOps</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
+        problem-solving aspect. I <span className="underline">enjoy</span> the
         feeling of finally figuring out a solution to a problem.
       </p>
       <p>
@@ -34,8 +34,7 @@ export default function About() {
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
         <span className="font-medium">
-          the Stock Market, Blockchain, AWS & Cloud
-        </span>
+          the Stock Market, Blockchain & AWS        </span>
         .
       </p>
     </motion.section>
