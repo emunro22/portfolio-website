@@ -13,22 +13,23 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       {/* Background container */}
-      <div className="fixed top-6 left-0 right-0 flex justify-center z-[999]">
+      <div className="fixed top-6 left-0 right-0 flex justify-center z-[999] px-4">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
+          className="w-full max-w-fit"
         >
         {/* Navigation pill */}
         <nav className="bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border border-white/40 dark:border-black/40 rounded-full shadow-lg shadow-black/[0.03] dark:shadow-black/20 p-1">
-          <ul className="flex items-center gap-1">
+          <ul className="flex items-center gap-1 overflow-x-auto scrollbar-hide">
             {links.map((link) => {
               const isActive = activeSection === link.name;
               
               return (
                 <motion.li
                   key={link.hash}
-                  className="relative"
+                  className="relative flex-shrink-0"
                   initial={{ y: -50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.1 }}
@@ -41,7 +42,7 @@ export default function Header() {
                     }}
                     className={clsx(
                       "relative flex items-center justify-center",
-                      "px-4 py-2 rounded-full text-sm font-medium",
+                      "px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium",
                       "transition-all duration-200 ease-out",
                       "select-none whitespace-nowrap",
                       isActive
