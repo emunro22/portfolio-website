@@ -86,12 +86,12 @@ export const projectsData = [
     url: "https://www.credly.com/badges/1ed87dc1-19a3-4515-8ea1-aa7589148629/linked_in_profile",
   },
   {
-    title: "Chat with any PDF - Coming Soon",
+    title: "Award Winning DXC Website",
     description:
-      "Discover its OCR capabilities, user-friendly interface, and commitment to data security. Explore the future of PDFs with AI ",
-    tags: ["React", "Next.js", "Tailwind", "OpenAI", "Stripe", "TypeScript"],
+      "Award Winning DXC Website which was shown to stakeholders and used within DXC sites ",
+    tags: ["React", "Next.js", "Tailwind", "MongoDB", "Next.auth", "TypeScript"],
     imageUrl: wordanalyticsImg,
-    url: "https://example.com/chatwithpdf",
+    url: "https://dxc-website-xi.vercel.app",
   },
 ] as const;
 
