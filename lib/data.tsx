@@ -45,7 +45,7 @@ export const experiencesData = [
     location: "Glasgow, Scotland",
     description:
       "Roles included: Apprentice (IT Telecoms), Project Lead (BAE Build Project), Teamcenter Administrator / Automation Specialist, Azure DevOps Engineer (DXC).",
-    icon: React.createElement(CgWorkAlt),
+    icon: <CgWorkAlt />,
     date: "January 2021 - January 2025",
   },
   {
@@ -53,7 +53,7 @@ export const experiencesData = [
     location: "Glasgow, Scotland",
     description:
       "After completing my apprenticeship I then went on to study 'Software Development within a Business' at Glasgow Caledonian University, I recieved a Bachelors Degree in this field",
-    icon: React.createElement(LuGraduationCap),
+    icon: <LuGraduationCap />,
     date: "September 2022 - 2025",
   },
   {
@@ -61,11 +61,9 @@ export const experiencesData = [
     location: "Glasgow, Scotland",
     description:
       "CloudOps Engineer at ThinkAnalytics, passionate about optimising cloud infrastructure and automating workflows for high availability, performance, and security.",
-    icon: React.createElement(CgWorkAlt),
+    icon: <CgWorkAlt />,
     date: "January 2025 - Present",
   },
-
-
 ] as const;
 
 export const projectsData = [
@@ -75,7 +73,7 @@ export const projectsData = [
       "This is my Freelance Portfolio to show off my work and send to clients, check out my Portfolio and Testimonials for more info! ",
     tags: ["React", "Next.js", "Tailwind", "CSS"],
     imageUrl: corpcommentImg,
-    url: "https://euanmunro.website/",
+    url: "https://website-portfolio-omb3.vercel.app/",
   },
   {
     title: "AWS Cloud Practitioner",
