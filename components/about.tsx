@@ -24,7 +24,7 @@ export default function About() {
         <span className="font-medium">
           since I started within Tech
         </span>
-        . <span className="italic">My favorite part of CloudOps</span> is the
+        . <span className="italic">My favorite part of working in the Cloud</span> is the
         problem-solving aspect. I <span className="underline">enjoy</span> the
         feeling of finally figuring out a solution to a problem.
       </p>

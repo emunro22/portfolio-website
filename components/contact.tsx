@@ -4,6 +4,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn"; // adjust import path if different
+import SectionHeading from "./section-heading";
 
 export default function Contact() {
   const [pending, setPending] = useState(false);
@@ -30,10 +31,7 @@ export default function Contact() {
       id="contact"
       className="w-full px-4 sm:px-6 scroll-mt-28 mb-32 text-center"
     >
-      <h2 className="text-4xl font-bold tracking-tight mb-4 text-gray-900 dark:text-white">
-        Contact Me
-      </h2>
-
+      <SectionHeading>Contact Me</SectionHeading>
       <p className="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed text-gray-600 dark:text-white/70">
         Please contact me directly at{" "}
         <a

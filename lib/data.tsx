@@ -1,4 +1,3 @@
-import React from "react";
 import {
   CgServer,
   CgWebcam,
@@ -52,7 +51,7 @@ export const experiencesData = [
     title: "University",
     location: "Glasgow, Scotland",
     description:
-      "After completing my apprenticeship I then went on to study 'Software Development within a Business' at Glasgow Caledonian University, I recieved a Bachelors Degree in this field",
+      "After completing my apprenticeship I then went on to study 'Software Development within a Business' at Glasgow Caledonian University, I recieved a Distinction - Bachelors Degree in this field",
     icon: <LuGraduationCap />,
     date: "September 2022 - 2025",
   },
